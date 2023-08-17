@@ -4,7 +4,7 @@ class CreateProjects < ActiveRecord::Migration[7.0]
       t.string :title
       t.text :subtitle
       t.string :info
-      t.string :picture
+      t.text :picture
       t.text :body
 
       t.timestamps
