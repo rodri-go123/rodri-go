@@ -1,0 +1,51 @@
+.pr-pic {
+  width: 100%;
+}
+
+.pr-body {
+  padding: 16px var(--spacer) var(--spacer) 0px;
+}
+
+.pr-body h2 {
+  margin: 0;
+
+  font-family: "degular", sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.pr-body {
+  margin: 0;
+  margin-top: 10px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.pr-description {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.pr-info {
+  font-size: 14px;
+  opacity: 0.65;
+  margin-top: 10px;
+}
+
+.pr-categories {
+  color: var(--purple-blue);
+  font-family: "degular", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.pr-categories span {
+  padding: 2px 12px 5px 12px;
+  text-align: center;
+  margin-right: 4px;
+
+  border-radius: 16px;
+  background: rgba(72, 72, 211, 0.15);
+}

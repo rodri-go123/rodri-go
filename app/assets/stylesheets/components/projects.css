@@ -1,0 +1,53 @@
+@import "project-cards.css";
+
+.projects-nav {
+  border-top: 1.5px solid var(--black-grey);
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  margin-top: 417px;
+  background: white;
+}
+
+#projects-container {
+  background: white;
+  z-index: 8;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects {
+  width: var(--page-width);
+  height: 200vh;
+  padding-top: var(--spacer);
+}
+
+.projects > .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: var(--spacer);
+}
+
+.projects > .row > div {
+  background: #ffecb3;
+  min-height: 450px;
+  margin-bottom: var(--spacer);
+}
+
+.col-large {
+  width: 74.4339622642%;
+}
+
+.col-medium {
+  width: 48.8679245283%;
+}
+
+.col-small {
+  width: 23.3018867925%;
+}

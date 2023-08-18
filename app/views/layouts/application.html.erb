@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RodriGo</title>
+    <title>rodri-go.net</title>
+    <meta name="author" content="Rodrigo Cardoso">
+    <meta name="description" content="Rodrigo is a toolmaker within design. His research interest lies in the philosophical, creative and social dimensions of digital technology.">
+    <meta name="keywords" content="Rodrigo Cardoso, design, graphic, research, autonomous, web, computation, digital, culture, web">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +14,20 @@
   </head>
 
   <body>
+
     <%= yield %>
+
+    <div class="footer">
+      <div class="footer-container">
+        <div class="footer-items">
+          <p>Let's talk!</p>
+          <p>rodrigo@rodri-go.net</p>
+          <p><i class="fa-brands fa-github"></i> GitHub</p>
+          <p><i class="fa-brands fa-instagram"></i> Instagram</p>
+          <p>Or meet me anywhere in The Hague</p>
+        </div>
+        <p id="footer-close-btn"><i class="fa-solid fa-xmark"></i></p>
+      </div>
+    </div>
   </body>
 </html>
