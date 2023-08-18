@@ -21,6 +21,13 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_17_181757) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "categories_projects", id: false, force: :cascade do |t|
+    t.bigint "project_id"
+    t.bigint "category_id"
+    t.index ["category_id"], name: "index_categories_projects_on_category_id"
+    t.index ["project_id"], name: "index_categories_projects_on_project_id"
+  end
+
   create_table "projects", force: :cascade do |t|
     t.string "title"
     t.text "subtitle"
@@ -30,13 +37,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_17_181757) do
     t.string "size"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "projects_categories", id: false, force: :cascade do |t|
-    t.bigint "project_id"
-    t.bigint "category_id"
-    t.index ["category_id"], name: "index_projects_categories_on_category_id"
-    t.index ["project_id"], name: "index_projects_categories_on_project_id"
   end
 
   create_table "users", force: :cascade do |t|
