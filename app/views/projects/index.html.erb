@@ -18,14 +18,31 @@
 
 <div class="navbar projects-nav">
   <div class="nav-wrapper full-width">
-    <div class="nav-left"><h1 class="nav-header">Take a look through my work <i class="fa-solid fa-arrow-right"></i></h1></div>
+    <div class="nav-left"><h1 class="nav-header">Take a 👀 look at my work <i class="fa-solid fa-arrow-turn-down"></i></h1></div>
     <div class="nav-right"><div class="nav-btn-long btn-active">All</div><div class="nav-btn-long">Research</div><div class="nav-btn-long">Development</div><div class="nav-btn-long">Design</div><div class="nav-btn-long">Experiments</div></div>
   </div>
 </div>
 
-<% @projects.each do |project| %>
-  <%= image_tag(project.picture, alt: "a nice project", style: "width: 200px") %>
-  <h3><%= project.title %></h3>
-  <p><%= project.info %></p>
-  <p><%= project.subtitle %></p>
-<% end %>
+<div class="main-section projects-wrapper">
+
+  <div class="projects-container">
+
+    <% @projects.each do |project| %>
+      <div class="<%= "col-#{project.size}"%> pr-card">
+        <%= image_tag(project.picture, class: "pr-pic", alt: "a nice project") %>
+        <div class="pr-body">
+          <h2><%= project.title %></h2>
+          <p class="pr-subtitle"><%= project.subtitle %></p>
+          <p class="pr-info"><%= project.info %></p>
+          <p class="pr-categories">
+            <% project.categories.each do |category| %>
+              <span><%= category.name.capitalize %></span>
+            <% end %>
+          </p>
+        </div>
+      </div>
+    <% end %>
+
+  </div>
+
+</div>
