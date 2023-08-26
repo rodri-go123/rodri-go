@@ -31,7 +31,7 @@ puts 'Finished!'
 puts 'Creating Projects'
 
 Project.create([
-  { title: 'The Autonomous Web', subtitle: 'How can people self-govern their internet experience? How can they obtain autonomy from the internet while still being able to use it according to their needs?', info: 'Series of Publications, 2021 - 2022', picture: 'http://127.0.0.1:5500/assets/pics/projects/AW/aw1.jpg', size: 'large', category_ids: [categories[0].id, categories[1].id] },
+  { title: 'The Autonomous Web', subtitle: 'How can people self-govern their internet experience? How can they obtain autonomy from the internet while still being able to use it according to their needs?', info: 'Series of Publications, 2021 - 2022', picture: 'projects/AW/aw1.jpg', size: 'large', category_ids: [categories[0].id, categories[1].id] },
   { title: 'Small Project', subtitle: 'Just some fancy subtitle.', info: 'Painting, 2021', picture: 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/tropical-annie-maxwell.jpg', size: 'small', category_ids: [categories[1].id, categories[2].id]},
   { title: 'Other Tiny Project', subtitle: 'I like turtles.', info: 'Sculpture, 2020', picture: 'https://m.media-amazon.com/images/I/81hnmJD59sL.jpg', size: 'small', category_ids: [categories[0].id, categories[3].id] },
   { title: 'An Ass', subtitle: 'A shapely butt for the conoisseurs.', info: 'Sculpture, 2020', picture: 'https://i.etsystatic.com/39756058/r/il/bccbe1/5163755216/il_fullxfull.5163755216_8rzm.jpg', size: 'small', category_ids: [categories[0].id, categories[1].id] },

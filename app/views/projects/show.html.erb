@@ -1,0 +1,17 @@
+<div id="project-head-container" class="main-section">
+  <div class="project-head">
+    <div class="col-large">
+      <h1 class="pr-title"><%= project.title %></h1>
+      <p class="pr-subtitle"><%= project.subtitle %></p>
+          <p class="pr-info"><%= project.info %></p>
+          <p class="pr-categories">
+            <% project.categories.each do |category| %>
+              <span><%= category.name.capitalize %></span>
+            <% end %>
+          </p>
+    </div>
+  </div>
+  <%= image_tag(project.picture, class: "pr-pic", alt: "a nice project") %>
+
+
+</div>
