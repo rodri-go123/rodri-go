@@ -22,7 +22,7 @@
 
 #about-header {
 font-family: "degular", sans-serif;
-font-weight: 600;
+font-weight: 500;
 font-style: normal;
 font-size: 26px;
 }
@@ -55,7 +55,8 @@ font-size: 26px;
   right: 0;
   top: 0;
   object-fit: cover;
-  border-left: 1.5px solid var(--black-grey);
+  box-shadow: rgba(0, 0, 0, 0.14) -2px 0px 30px;
+
 }
 
 .vertical-profile-pic {

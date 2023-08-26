@@ -32,10 +32,10 @@ puts 'Creating Projects'
 
 Project.create([
   { title: 'The Autonomous Web', subtitle: 'How can people self-govern their internet experience? How can they obtain autonomy from the internet while still being able to use it according to their needs?', info: 'Series of Publications, 2021 - 2022', picture: 'http://127.0.0.1:5500/assets/pics/projects/AW/aw1.jpg', size: 'large', category_ids: [categories[0].id, categories[1].id] },
-  { title: 'Small Project', subtitle: 'Just some fancy subtitle.', info: 'Painting, 2021', picture: 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/tropical-annie-maxwell.jpg', size: 'small' },
-  { title: 'Other Tiny Project', subtitle: 'I like turtles.', info: 'Sculpture, 2020', picture: 'https://m.media-amazon.com/images/I/81hnmJD59sL.jpg', size: 'small' },
-  { title: 'An Ass', subtitle: 'A shapely butt for the conoisseurs.', info: 'Sculpture, 2020', picture: 'https://i.etsystatic.com/39756058/r/il/bccbe1/5163755216/il_fullxfull.5163755216_8rzm.jpg', size: 'small' },
-  { title: 'Something Medium', subtitle: 'A medium sized Thomas the train. Truly avant-garde.', info: 'Train, 2019', picture: 'https://www.artmajeur.com/medias/standard/b/o/boules47/artwork/11754491_20e52abb-d243-4a7a-99a5-d8a02abc7801.jpg?v=1543955860', size: 'medium' },
+  { title: 'Small Project', subtitle: 'Just some fancy subtitle.', info: 'Painting, 2021', picture: 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/tropical-annie-maxwell.jpg', size: 'small', category_ids: [categories[1].id, categories[2].id]},
+  { title: 'Other Tiny Project', subtitle: 'I like turtles.', info: 'Sculpture, 2020', picture: 'https://m.media-amazon.com/images/I/81hnmJD59sL.jpg', size: 'small', category_ids: [categories[0].id, categories[3].id] },
+  { title: 'An Ass', subtitle: 'A shapely butt for the conoisseurs.', info: 'Sculpture, 2020', picture: 'https://i.etsystatic.com/39756058/r/il/bccbe1/5163755216/il_fullxfull.5163755216_8rzm.jpg', size: 'small', category_ids: [categories[0].id, categories[1].id] },
+  { title: 'Something Medium', subtitle: 'A medium sized Thomas the train. Truly avant-garde.', info: 'Train, 2019', picture: 'https://www.artmajeur.com/medias/standard/b/o/boules47/artwork/11754491_20e52abb-d243-4a7a-99a5-d8a02abc7801.jpg?v=1543955860', size: 'medium', category_ids: [categories[3].id, categories[1].id] },
 ])
 
 puts Project.all
