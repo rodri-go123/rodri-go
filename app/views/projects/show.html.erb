@@ -1,17 +1,24 @@
+<div class="navbar show-nav">
+  <div class="nav-wrapper full-width">
+    <div class="nav-left"><div class="nav-btn-long"><i class="fa-solid fa-arrow-left"></i> Back</div></div>
+    <div class="nav-right"><h1 class="nav-header" id="show-nav-header">Work <i class="fa-solid fa-arrow-right"></i></h1><div class="nav-btn-long">All</div><div class="nav-btn-long">Research</div><div class="nav-btn-long">Development</div><div class="nav-btn-long">Design</div><div class="nav-btn-long">Experiments</div></div>
+  </div>
+</div>
+
 <div id="project-head-container" class="main-section">
   <div class="project-head">
-    <div class="col-large">
-      <h1 class="pr-title"><%= project.title %></h1>
-      <p class="pr-subtitle"><%= project.subtitle %></p>
-          <p class="pr-info"><%= project.info %></p>
-          <p class="pr-categories">
-            <% project.categories.each do |category| %>
-              <span><%= category.name.capitalize %></span>
-            <% end %>
-          </p>
-    </div>
+    <div class="project-head-wrapper full-width">
+      <h1 class="pr-title"><%= @project.title %></h1>
+      <p class="pr-subtitle"><%= @project.subtitle %></p>
+      <p class="pr-info"><%= @project.info %></p>
+      <p class="pr-categories">
+        <% @project.categories.each do |category| %>
+          <span><%= category.name.capitalize %></span>
+        <% end %>
+      </p>
   </div>
-  <%= image_tag(project.picture, class: "pr-pic", alt: "a nice project") %>
+  </div>
+  <%= image_tag(@project.picture, class: "pr-header-pic", alt: "a nice project") %>
 
 
 </div>
